@@ -33,7 +33,6 @@ const startApolloServer = async () => {
     // the authMiddleware function will decode the token and modify the request object
     context: authMiddleware // add another layer to the middleware stack and it's coming from the authMiddleware function
   }));
-
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
 
