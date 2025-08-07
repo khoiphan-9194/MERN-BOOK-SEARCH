@@ -4,12 +4,11 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "a_start": "node server/apolloServer.js",
+    "start": "node server/apolloServer.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "develop_2": "concurrently \"cd server && npm run a_watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build",
+    "build": "npm install && cd client && npm run build",
     "render-build":"npm install && npm run build"
     
   },
