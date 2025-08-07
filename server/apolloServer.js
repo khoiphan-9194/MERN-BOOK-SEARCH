@@ -52,3 +52,12 @@ const startApolloServer = async () => {
 
 // Call the async function to start the server
   startApolloServer();
+
+
+  /*
+  please generate git command to commit and push this file, check status first
+  git status
+  git add server/apolloServer.js
+  git commit -m "Set up Apollo Server with Express middleware and authentication"
+  git push origin main
+  */
