@@ -22,7 +22,6 @@ const startApolloServer = async () => {
   app.use(express.json());
 
   app.use('/graphql', expressMiddleware(server, {
-    
     // Pass the authMiddleware function to the Apollo server context
     // This allows us to access the user information in our resolvers
     // and use it for authentication and authorization
